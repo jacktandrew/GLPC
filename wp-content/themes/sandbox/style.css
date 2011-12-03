@@ -1,0 +1,290 @@
+/*
+THEME NAME: Sandbox
+THEME URI: http://www.plaintxt.org/themes/sandbox/
+DESCRIPTION: Rich with powerful and dynamic semantic class selectors, Sandbox is a canvas for CSS artists
+VERSION: 1.6.1
+AUTHOR: <a href="http://andy.wordpress.com/">Andy Skelton</a> &amp; <a href="http://www.plaintxt.org/">Scott Allan Wallick</a>
+AUTHOR URI:
+TAGS: white, microformats, fixed-width, flexible-width, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar
+*/
+
+/* Two-column with sidebar on left from the /examples/ folder  */
+@import url('examples/2c-l.css');
+
+/* Just some example content */
+div.skip-link {
+position:absolute;
+right:1em;
+top:1em;
+}
+
+div#menu {
+background:#EEE;
+height:1.5em;
+margin:1em 0;
+width:100%;
+}
+
+div#menu ul,div#menu ul ul {
+line-height:1;
+list-style:none;
+margin:0;
+padding:0;
+}
+
+div#menu ul a {
+display:block;
+margin-right:1em;
+padding:0.2em 0.5em;
+text-decoration:none;
+}
+
+div#menu ul ul ul a {
+font-style:italic;
+}
+
+div#menu ul li ul {
+left:-999em;
+position:absolute;
+}
+
+div#menu ul li:hover ul {
+left:auto;
+}
+
+.entry-title,.entry-meta {
+clear:both;
+}
+
+div#container,div#primary {
+margin-top:2em;
+}
+
+form#commentform .form-label {
+margin:1em 0 0;
+}
+
+form#commentform span.required {
+background:#fff;
+color:#c30;
+}
+
+form#commentform,form#commentform p {
+padding:0;
+}
+
+input#author,input#email,input#url,textarea#comment {
+padding:0.2em;
+}
+
+div.comments ol li {
+margin:0 0 3.5em;
+}
+
+textarea#comment {
+height:13em;
+margin:0 0 0.5em;
+overflow:auto;
+width:66%;
+}
+
+.alignright,img.alignright{
+float:right;
+margin:1em 0 0 1em;
+}
+
+.alignleft,img.alignleft{
+float:left;
+margin:1em 1em 0 0;
+}
+
+.aligncenter,img.aligncenter{
+display:block;
+margin:1em auto;
+text-align:center;
+}
+
+div.gallery {
+clear:both;
+height:180px;
+margin:1em 0;
+width:100%;
+}
+
+p.wp-caption-text{
+font-style:italic;
+}
+
+div.gallery dl{
+margin:1em auto;
+overflow:hidden;
+text-align:center;
+}
+
+div.gallery dl.gallery-columns-1 {
+width:100%;
+}
+
+div.gallery dl.gallery-columns-2 {
+width:49%;
+}
+
+div.gallery dl.gallery-columns-3 {
+width:33%;
+}
+
+div.gallery dl.gallery-columns-4 {
+width:24%;
+}
+
+div.gallery dl.gallery-columns-5 {
+width:19%;
+}
+
+div#nav-above {
+margin-bottom:1em;
+}
+
+div#nav-below {
+margin-top:1em;
+}
+
+div#nav-images {
+height:150px;
+margin:1em 0;
+}
+
+div.navigation {
+height:1.25em;
+}
+
+div.navigation div.nav-next {
+float:right;
+text-align:right;
+}
+
+div.sidebar h3 {
+font-size:1.2em;
+}
+
+div.sidebar input#s {
+width:7em;
+}
+
+div.sidebar li {
+list-style:none;
+margin:0 0 2em;
+}
+
+div.sidebar li form {
+margin:0.2em 0 0;
+padding:0;
+}
+
+div.sidebar ul ul {
+margin:0 0 0 1em;
+}
+
+div.sidebar ul ul li {
+list-style:disc;
+margin:0;
+}
+
+div.sidebar ul ul ul {
+margin:0 0 0 0.5em;
+}
+
+div.sidebar ul ul ul li {
+list-style:circle;
+}
+
+div#menu ul li,div.gallery dl,div.navigation div.nav-previous {
+float:left;
+}
+
+div#header,div#footer {
+text-align:center;
+}
+
+input#author,input#email,input#url,div.navigation div {
+width:50%;
+}
+
+div.gallery *,div.sidebar div,div.sidebar h3,div.sidebar ul {
+margin:0;
+padding:0;
+}
+
+    * { font-family: serif; margin: 0; padding: 0; color: #222; -moz-user-select: none;
+                -khtml-user-select: none;
+                user-select: none; }
+    body { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011/12/Body-BG-Light.jpg"); background-repeat: repeat-x; }
+    #wrapper { width: 810px; margin-left: auto; margin-right: auto; height: 2000px; }
+    a { text-decoration: none; color: #111; }
+    a:hover, a img:hover { opacity: .6; }
+    
+    li { list-style-type: none; }
+    #top_border, #header, #nav_wrapper, #sub_menus { width: 1200px; }
+    #header, #nav_wrapper, #sub_menus { margin-left: -195px; }
+    #header { height: 141px; }    
+    #small_links { margin: 10px 0 0 348px; }
+    #small_links a { font-size: 13px; font-family: sans-serif; }
+    #small_links span { color: #ef3b24; }
+    #logo div, #logo img { float: left; }
+    #social_media { margin: 72px 10px 0 0; }
+    #contact_methods {  margin: 66px 0 0 10px; }
+    #social_media img, #contact_methods img { margin: 0px 5px; }
+    #logo { margin-left: 233px; }
+    #contact_methods li, #page_links li { display: inline; } 
+
+
+    #nav { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011/12/nav-bg.jpg"); height: 119px; width: 1200px; margin-left: -210px; }
+    #nav ul { margin-left: 210px; }
+    #nav li { float: left; list-style: none; }
+    .hoverable { 
+      margin: 15px -1px 0 -1px;
+      padding: 0px 25px 55px 25px;
+      border-radius: 7px 7px 0px 0px;
+      }
+    .hoverable:hover { background: #ef3b24; opacity: 1; }
+
+    #nav ul li ul li a { color: black; padding: 15px; }
+    #nav ul li ul li { margin: 0px 30px; }
+    #nav img { margin: 34px 0 0 0; }
+    #nav ul il { position: relative; }
+    #nav li ul { position: absolute; top: 304px; 
+      display: none; 
+      }
+    #nav li:first-child ul { margin-left: -50px;}
+    #nav li:nth-child(3) ul { margin-left: -125px;} 
+    #nav li:nth-child(5) ul { margin-left: -125px;}
+    #nav li:last-child ul { margin-left: -250px; }
+    #nav li:hover ul { display: block; }
+
+    #search_wrapper { background: white; padding: 0 5px; margin: 5px 0 0 640px; height: 20px; }
+    #search_wrapper input { float: left; height: 20px; margin-top: -1px; background: black; border: 0px solid black; color: white; }
+    #search_icon { float: left; background: black; height: 20px; }
+
+    #two_column_wrapper { float: left; width: 600px; }
+    #welcome { margin: 10px 0 0 0; }
+    #all_caps { font-size: 30px; color: #ef3b24; text-align: right;  font-style: italic; }
+    #all_caps, #splash_paragraph { width: 280px; float: left; font-family: sans-serif; font-weight: lighter; margin: 10px; }
+    p { margin-bottom: 10px; }
+    
+    #columns { float: left; }
+    #black_box {   
+                  float: left; 
+                  background: black; 
+                  margin: 10px 0 0 10px; 
+                  width: 200px; 
+                  }
+    #black_box div { margin-top: 10px; }              
+                  
+    #black_box h3 { font-size: 30px; font-weight: bold; float: left; padding-left: 10px; }
+    #black_box h4 { font-size: 18px; padding: 10px 10px 5px 10px; margin-left: 40px; }
+    #black_box h5 { margin-left: 40px; padding: 1px 10px; font-weight: lighter; }
+    #black_box h3, #black_box h4, #black_box h5 { color: white; font-family: sans-serif; }
+    #scroll { margin-left: 10px; }
+    
+    
+    

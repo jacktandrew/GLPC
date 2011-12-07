@@ -218,7 +218,7 @@ padding:0;
     * { font-family: serif; margin: 0; padding: 0; color: #222; -moz-user-select: none;
                 -khtml-user-select: none;
                 user-select: none; }
-    body { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011/12/Body-BG-Light.jpg"); background-repeat: repeat-x; }
+     body { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011/12/Body-BG-Light.jpg"); background-repeat: repeat-x; }
     #wrapper { width: 810px; margin-left: auto; margin-right: auto; height: 2000px; }
     a { text-decoration: none; color: #111; }
     a:hover, a img:hover { opacity: .6; }
@@ -236,34 +236,50 @@ padding:0;
     #social_media img, #contact_methods img { margin: 0px 5px; }
     #logo { margin-left: 233px; }
     #contact_methods li, #page_links li { display: inline; } 
-
+    #email, #phone { margin: 65px 5px 0 5px; }
+    #email_box, #phone_box { 
+      position: absolute;
+      width: 0px;
+      overflow: hidden;
+      height: 25px;
+      top: 125px; 
+      }
+    #email_box { left: 940px; }  
+    #phone_box { left: 980px; }
+    #email_box:hover, #phone_box:hover { opacity: .6; }
+    
+    h2 { 
+      font-size: 18px;
+      font-weight: bolder;
+      margin-left: 10px;
+      }
 
     #nav { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011/12/nav-bg.jpg"); height: 119px; width: 1200px; margin-left: -210px; }
     #nav ul { margin-left: 210px; }
     #nav li { float: left; list-style: none; }
     .hoverable { 
       margin: 15px -1px 0 -1px;
-      padding: 0px 25px 55px 25px;
+      padding: 0px 25px 58px 25px;
       border-radius: 7px 7px 0px 0px;
       }
-    .hoverable:hover { background: #ef3b24; opacity: 1; }
+    .hovering { background: #ef3b24; opacity: 1; }
 
     #nav ul li ul li a { color: black; padding: 15px; }
     #nav ul li ul li { margin: 0px 30px; }
     #nav img { margin: 34px 0 0 0; }
     #nav ul il { position: relative; }
-    #nav li ul { position: absolute; top: 304px; 
+    #nav li ul { position: absolute; top: 275px; 
       display: none; 
       }
-    #nav li:first-child ul { margin-left: -50px;}
+    #nav li:first-child ul { margin-left: 0px;}
     #nav li:nth-child(3) ul { margin-left: -125px;} 
     #nav li:nth-child(5) ul { margin-left: -125px;}
     #nav li:last-child ul { margin-left: -250px; }
     #nav li:hover ul { display: block; }
 
     #search_wrapper { background: white; padding: 0 5px; margin: 5px 0 0 640px; height: 20px; }
-    #search_wrapper input { float: left; height: 20px; margin-top: -1px; background: black; border: 0px solid black; color: white; }
-    #search_icon { float: left; background: black; height: 20px; }
+    #search_wrapper input { margin-top: -4px; float: left; height: 20px; background: black; border: 0px; color: white; }
+    #search_icon { margin-top: -4px; float: left; background: black; height: 20px; }
 
     #two_column_wrapper { float: left; width: 600px; }
     #welcome { margin: 10px 0 0 0; }
@@ -285,6 +301,5 @@ padding:0;
     #black_box h5 { margin-left: 40px; padding: 1px 10px; font-weight: lighter; }
     #black_box h3, #black_box h4, #black_box h5 { color: white; font-family: sans-serif; }
     #scroll { margin-left: 10px; }
-    
     
     

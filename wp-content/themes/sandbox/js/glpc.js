@@ -49,7 +49,7 @@ $j(document).ready(function() {
   
   // Calendar
 
-    $j.getJSON('http://www.google.com/calendar/feeds/jacktandrew@gmail.com/public/full?alt=json-in-script&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true&callback=?', function(json) {
+    $j.getJSON('http://www.google.com/calendar/feeds/events@crosspointchurches.org/public/full?alt=json-in-script&orderby=starttime&max-results=15&singleevents=true&sortorder=ascending&futureevents=true&callback=?', function(json) {
         console.log(json);
         var html = "";
 

@@ -87,7 +87,7 @@
 
 
         <li class="hoverable" onMouseOver="document.pic4.src='wp-content/uploads/2011/12/white-resources.png' " onMouseOut="document.pic4.src='wp-content/uploads/2011/12/nav_link-resources.png' ">
-          <a href="wp-content/uploads/2011/12/nav_link-resources.png"><img name="pic4" src="wp-content/uploads/2011/12/nav_link-resources.png" /></a>
+          <a href="http://localhost:8888/GLPC/?page_id=2"><img name="pic4" src="wp-content/uploads/2011/12/nav_link-resources.png" /></a>
           <ul>
             <li><a href="#">peri #1</a></li>
             <li><a href="#">peri #2</a></li>

@@ -23,10 +23,10 @@ body { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011
           </div>
 
       </div>
-    
-      <div id="black_box"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+      <div id="third_column">
+        <div id="black_box"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
         <img id="scroll" src="wp-content/uploads/2011/12/scroll.png" />
-        
+      </div>     
   </div>
 </div>
 

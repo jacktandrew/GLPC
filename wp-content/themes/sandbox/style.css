@@ -63,7 +63,7 @@
 
     #search_wrapper { 
 	background: white; 
-	padding: 0 5px; 
+	padding: 0 6px; 
 	margin: 5px 0 0 652px; 
 	height: 20px; 
 	}
@@ -77,9 +77,9 @@
     p { margin-bottom: 10px; }
     
     #columns { float: left; }
+    #third_column { float: left; }
     #black_box {   
- 		  float: left;
-                  background: black; 
+		  background: black; 
                   margin: 10px 0 0 10px; 
                   width: 200px; 
                   }

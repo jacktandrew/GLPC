@@ -17,17 +17,93 @@
 
 </head>
 
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="small_links" >
+        <a href="#">The City </a><span> | </span> 
+        <a href="#">Server </a><span> | </span> 
+        <a href="#">Give </a>
+      </div>
+
+      <div id="logo">
+        <div id="social_media">
+          <a href="#"><img src="wp-content/uploads/2011/12/social-twitter.png" /></a>
+          <a href="#"><img src="wp-content/uploads/2011/12/social-facebook.png" /></a>
+        </div>
+    
+        <img src="wp-content/uploads/2011/12/logo.png" />
+
+        <a href="#"><img id="email" src="wp-content/uploads/2011/12/email-black.png" /></a>
+        <div id="email_box"><a href="mailto:office@crosspointchurches.org"><h2>office@crosspointchurches.org</h2></a></div>
+        <a href="#"><img id="phone" src="wp-content/uploads/2011/12/phone-black.png" /></a>
+        <div id="phone_box"><h2>206.789.7320</h2></div>
+
+      </div>
+
+    </div>   <!-- END HEADER -->
+
+    <div id="nav">
+      <ul>
+        <li class="hoverable" onMouseOver="document.pic1.src='wp-content/uploads/2011/12/white-about.png' " onMouseOut="document.pic1.src='wp-content/uploads/2011/12/nav_link-about.png' ">
+          <a href="http://localhost:8888/GLPC/?page_id=6"><img name="pic1" src="wp-content/uploads/2011/12/nav_link-about.png" /></a>
+          <ul>
+            <li><a href="#">abou #1</a></li>
+            <li><a href="#">abou #2</a></li>
+            <li><a href="#">abou #3</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <img class="pipes" src="wp-content/uploads/2011/12/red_pipe.png" />
+        </li>
+
+        <li class="hoverable" onMouseOver="document.pic2.src='wp-content/uploads/2011/12/white-locations.png' " onMouseOut="document.pic2.src='wp-content/uploads/2011/12/nav_link-locations.png' ">
+          <a href="http://localhost:8888/GLPC/?page_id=7"><img name="pic2" src="wp-content/uploads/2011/12/nav_link-locations.png" /></a>
+          <ul>
+            <li><a href="#">loca #1</a></li>
+            <li><a href="#">loca #2</a></li>
+            <li><a href="#">loca #3</a></li>
+          </ul>
+        </li>
 
 
-<!--
-<body class="<?php sandbox_body_class() ?>">
+        <li>
+          <img class="pipes" src="wp-content/uploads/2011/12/red_pipe.png" />
+        </li>
 
-		<h1 id="blog-title"><span><a href="<?php bloginfo('home') ?>/" title="<?php echo wp_specialchars( get_bloginfo('name'), 1 ) ?>" rel="home"><?php bloginfo('name') ?></a></span></h1>
-		<div id="blog-description"><?php bloginfo('description') ?></div>
-	</div>
+        <li class="hoverable" onMouseOver="document.pic3.src='wp-content/uploads/2011/12/white-peripateo.png' " onMouseOut="document.pic3.src='wp-content/uploads/2011/12/nav_link-peripateo.png' ">
+          <a href="http://localhost:8888/GLPC/?page_id=12"><img name="pic3" src="wp-content/uploads/2011/12/nav_link-peripateo.png" /></a>
+          <ul>
+            <li><a href="#">reso #1</a></li>
+            <li><a href="#">reso #2</a></li>
+            <li><a href="#">reso #3</a></li>
+          </ul>
+        </li>
 
-	<div id="access">
-		<div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a></div>
-		<?php sandbox_globalnav() ?>
-	</div>
--->
+        <li>
+          <img class="pipes" src="wp-content/uploads/2011/12/red_pipe.png" />
+        </li>
+
+
+        <li class="hoverable" onMouseOver="document.pic4.src='wp-content/uploads/2011/12/white-resources.png' " onMouseOut="document.pic4.src='wp-content/uploads/2011/12/nav_link-resources.png' ">
+          <a href="wp-content/uploads/2011/12/nav_link-resources.png"><img name="pic4" src="wp-content/uploads/2011/12/nav_link-resources.png" /></a>
+          <ul>
+            <li><a href="#">peri #1</a></li>
+            <li><a href="#">peri #2</a></li>
+            <li><a href="#">peri #3</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+
+      <div id="search_wrapper">
+	<form id="searchform" value="?" class="blog-search" method="get" action="<?php bloginfo('home') ?>">
+
+<input id="s" name="s" type="text" class="text" value="<?php the_search_query() ?>" size="17" tabindex="1" />
+<input type="image" class="button" src="wp-content/uploads/2011/12/search-icon-light.png" value="<?php _e( ' &nbsp; ', 'sandbox' ) ?>" tabindex="2" />
+	</form>
+      </div>
+
+

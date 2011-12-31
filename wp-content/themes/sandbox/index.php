@@ -25,7 +25,7 @@ body { background-image: url("wp-content/uploads/2011/12/Body-BG-Light.jpg"); ba
 
       </div>
       <div id="third_column">
-        <div id="black_box"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+        <div id="black_box"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
         <img id="scroll" src="wp-content/uploads/2011/12/scroll.png" />
       </div>     
   </div>

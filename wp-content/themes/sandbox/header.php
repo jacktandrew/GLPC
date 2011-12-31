@@ -12,8 +12,7 @@
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
 
-<script type="text/javascript"
-   src="<?php bloginfo("template_url"); ?>/js/glpc.js"></script>
+<script src="wp-content/uploads/2011/12/glpc.js" type="text/javascript"></script>
 
 </head>
 
@@ -32,12 +31,20 @@
           <a href="#"><img src="wp-content/uploads/2011/12/social-facebook.png" /></a>
         </div>
     
-        <img src="wp-content/uploads/2011/12/logo.png" />
+        <a id="logo_img" href="./"><img src="wp-content/uploads/2011/12/logo.png" /></a>
+	
+	<div id="contact_methods">
+	  <a href="#"><img id="email" src="wp-content/uploads/2011/12/email-black.png" /></a>
+          <a href="#"><img id="phone" src="wp-content/uploads/2011/12/phone-black.png" /></a>
+	</div>
 
-        <a href="#"><img id="email" src="wp-content/uploads/2011/12/email-black.png" /></a>
-        <div id="email_box"><a href="mailto:office@crosspointchurches.org"><h2>office@crosspointchurches.org</h2></a></div>
-        <a href="#"><img id="phone" src="wp-content/uploads/2011/12/phone-black.png" /></a>
-        <div id="phone_box"><h2>206.789.7320</h2></div>
+          <div id="phone_box">
+	    <h2>206.789.7320</h2>
+	  </div>
+
+          <div id="email_box">
+	    <a href="mailto:office@crosspointchurches.org"><h2>office@crosspointchurches.org</h2></a>
+	  </div>
 
       </div>
 
@@ -45,8 +52,7 @@
 
     <div id="nav">
       <ul>
-        <li class="hoverable" onMouseOver="document.pic1.src='wp-content/uploads/2011/12/white-about.png' " onMouseOut="document.pic1.src='wp-content/uploads/2011/12/nav_link-about.png' ">
-          <a href="http://localhost:8888/GLPC/?page_id=6"><img name="pic1" src="wp-content/uploads/2011/12/nav_link-about.png" /></a>
+        <li onMouseOver="document.pic1.src='wp-content/uploads/2011/12/white-about.png' " onMouseOut="document.pic1.src='wp-content/uploads/2011/12/nav_link-about.png' "><a class="main_nav_links" href="./about"><img name="pic1" src="wp-content/uploads/2011/12/nav_link-about.png" /></a>
           <ul>
             <li><a href="#">abou #1</a></li>
             <li><a href="#">abou #2</a></li>
@@ -58,8 +64,8 @@
           <img class="pipes" src="wp-content/uploads/2011/12/red_pipe.png" />
         </li>
 
-        <li class="hoverable" onMouseOver="document.pic2.src='wp-content/uploads/2011/12/white-locations.png' " onMouseOut="document.pic2.src='wp-content/uploads/2011/12/nav_link-locations.png' ">
-          <a href="http://localhost:8888/GLPC/?page_id=7"><img name="pic2" src="wp-content/uploads/2011/12/nav_link-locations.png" /></a>
+        <li onMouseOver="document.pic2.src='wp-content/uploads/2011/12/white-locations.png' " onMouseOut="document.pic2.src='wp-content/uploads/2011/12/nav_link-locations.png' ">
+          <a class="main_nav_links" href="./locations"><img name="pic2" src="wp-content/uploads/2011/12/nav_link-locations.png" /></a>
           <ul>
             <li><a href="#">loca #1</a></li>
             <li><a href="#">loca #2</a></li>
@@ -72,8 +78,8 @@
           <img class="pipes" src="wp-content/uploads/2011/12/red_pipe.png" />
         </li>
 
-        <li class="hoverable" onMouseOver="document.pic3.src='wp-content/uploads/2011/12/white-peripateo.png' " onMouseOut="document.pic3.src='wp-content/uploads/2011/12/nav_link-peripateo.png' ">
-          <a href="http://localhost:8888/GLPC/?page_id=12"><img name="pic3" src="wp-content/uploads/2011/12/nav_link-peripateo.png" /></a>
+        <li onMouseOver="document.pic3.src='wp-content/uploads/2011/12/white-peripateo.png' " onMouseOut="document.pic3.src='wp-content/uploads/2011/12/nav_link-peripateo.png' ">
+          <a class="main_nav_links" href="./peripateo"><img name="pic3" src="wp-content/uploads/2011/12/nav_link-peripateo.png" /></a>
           <ul>
             <li><a href="#">reso #1</a></li>
             <li><a href="#">reso #2</a></li>
@@ -86,8 +92,8 @@
         </li>
 
 
-        <li class="hoverable" onMouseOver="document.pic4.src='wp-content/uploads/2011/12/white-resources.png' " onMouseOut="document.pic4.src='wp-content/uploads/2011/12/nav_link-resources.png' ">
-          <a href="http://localhost:8888/GLPC/?page_id=2"><img name="pic4" src="wp-content/uploads/2011/12/nav_link-resources.png" /></a>
+        <li onMouseOver="document.pic4.src='wp-content/uploads/2011/12/white-resources.png' " onMouseOut="document.pic4.src='wp-content/uploads/2011/12/nav_link-resources.png' ">
+          <a class="main_nav_links" href="./resources"><img name="pic4" src="wp-content/uploads/2011/12/nav_link-resources.png" /></a>
           <ul>
             <li><a href="#">peri #1</a></li>
             <li><a href="#">peri #2</a></li>
@@ -105,5 +111,3 @@
 <input type="image" class="button" src="wp-content/uploads/2011/12/search-icon-light.png" value="<?php _e( ' &nbsp; ', 'sandbox' ) ?>" tabindex="2" />
 	</form>
       </div>
-
-

@@ -1,10 +1,12 @@
-    * { font-family: serif; margin: 0; padding: 0; color: #222; -moz-user-select: none;
-                -khtml-user-select: none;
-                user-select: none; }
-    body { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011/12/Body-BG-short.png"); background-repeat: repeat-x; }
-    #wrapper { width: 810px; margin-left: auto; margin-right: auto; height: 1000px; }
+    * { font-family: serif; margin: 0; padding: 0; color: #222; -moz-user-select: text;
+                -khtml-user-select: text;
+                user-select: text; }
+    body { background-color: #eee3cb; background-image: url("http://crosspointchurches.org/dev-CP/wp-content/uploads/2011/12/Body-BG-short.png"); background-repeat: repeat-x; }
+
+    #wrapper { width: 810px; margin-left: auto; margin-right: auto; height: 1000px;  }
     a { text-decoration: none; color: #111; }
-    a:hover, a img:hover { opacity: .6; }
+    #logo_img img:hover, .hoverable img:hover, .hoverable a:hover { opacity: 1; }
+    a:hover, a img:hover { opacity: .6; color: #eee3cb; }
     
     li { list-style-type: none; }
     #top_border, #header, #nav_wrapper, #sub_menus { width: 1200px; }
@@ -14,47 +16,28 @@
     #small_links a { font-size: 13px; font-family: sans-serif; }
     #small_links span { color: #ef3b24; }
     #logo div, #logo img { float: left; }
+ 
     #social_media { margin: 72px 10px 0 0; }
-    #contact_methods {  margin: 66px 0 0 10px; }
-    #social_media img, #contact_methods img { margin: 0px 5px; }
+    #contact_methods {  margin: 66px 0 0 0px; }
+    #social_media img { margin: 0px 5px; }
     #logo { margin-left: 233px; }
-    #contact_methods li, #page_links li { display: inline; } 
-    #email, #phone { margin: 65px 5px 0 5px; }
-    #email_box, #phone_box { 
-      position: absolute;
-      width: 0px;
-      overflow: hidden;
-      height: 25px;
-      top: 97px; 
-      }
-    #email_box { left: 940px; }  
-    #phone_box { left: 980px; }
+    #email_box, #phone_box { width: 0px; overflow: hidden; margin: 13px 0 0 -75px; float: left; }
     #email_box:hover, #phone_box:hover { opacity: .6; }
     
-    h2 { 
-      font-size: 18px;
-      font-weight: bolder;
-      margin-left: 10px;
-      }
+    h2 { font-size: 18px; font-weight: bolder; margin-left: 5px; }
 
-    #nav { background-image: url("http://localhost:8888/GLPC/wp-content/uploads/2011/12/nav-bg.jpg"); height: 50px; width: 1200px; margin-left: -210px; }
+    #nav { background-image: url("http://crosspointchurches.org/dev-CP/wp-content/uploads/2011/12/nav-bg.jpg"); height: 50px; width: 1200px; margin-left: -210px; }
     #nav ul { margin-left: 210px; }
-    #nav li { float: left; list-style: none; }
-    .hoverable { 
-      margin: 5px -1px 0 -1px;
-      padding: 12px 25px 17px 25px;
-      border-radius: 7px 7px 0px 0px;
-      }
-    .hovering { background: #ef3b24; opacity: 1; }
+    #nav li { float: left; list-style: none; margin: 6px -1px 0 -1px; border-radius: 7px 7px 0px 0px; } 
+    .main_nav_links { display: block; padding: 13px 25px 19px 25px; border-radius: 7px 7px 0px 0px; }
+    #nav .main_nav_links:hover, #nav li img:hover, #nav li:hover { background: #ef3b24; opacity: 1; }
 
-    #nav ul li ul li a { color: black; padding: 15px; }
+    #nav ul li ul li a { color: white; padding: 15px; font-family: helvetica, sans-serif; font-weight: bold; text-transform: uppercase; font-size: 13px; }
     #nav ul li ul li { margin: 0px 30px; }
-    .pipes { width: 1px; height: 30px; margin-top: 10px; }
+    #nav .pipes { width: 1px; height: 30px; margin-top: 6px; }
     
     #nav ul il { position: relative; }
-    #nav li ul { position: absolute; top: 206px; 
-      display: none; 
-      }
+    #nav li ul { position: absolute; top: 206px; display: none; }
     #nav li:first-child ul { margin-left: 0px;}
     #nav li:nth-child(3) ul { margin-left: -125px;} 
     #nav li:nth-child(5) ul { margin-left: -125px;}
@@ -67,7 +50,7 @@
 	margin: 5px 0 0 652px; 
 	height: 20px; 
 	}
-    #searchform input { float: left; height: 20px; background: black; border: 0px; color: white; }
+    #searchform input { float: left; height: 20px; background: black; border: 0px; color: white; z-index: 5; }
     #search_icon { float: left; background: black; height: 20px; }
 
     #two_column_wrapper { float: left; width: 600px; }
@@ -84,10 +67,11 @@
                   width: 200px; 
                   }
     #black_box div { margin-top: 10px; }              
-                  
-    #black_box h3 { font-size: 30px; font-weight: bold; float: left; padding-left: 10px; }
+
+    #black_box h3, #black_box h4, #black_box h5 { color: white; font-family: sans-serif; }                  
+    #black_box h3 { font-size: 30px; font-weight: bold; float: left; padding-left: 10px; color: #eee3cb; }
     #black_box h4 { font-size: 18px; padding: 10px 10px 5px 10px; margin-left: 40px; }
     #black_box h5 { margin-left: 40px; padding: 1px 10px; font-weight: lighter; }
-    #black_box h3, #black_box h4, #black_box h5 { color: white; font-family: sans-serif; }
+
     #scroll { margin-left: 10px;}
-    #footer { text-align: center; }
+    #footer { text-align: center; margin-bottom: 25px; }

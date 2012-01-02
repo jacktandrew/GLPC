@@ -8,8 +8,8 @@ body { background-image: url("wp-content/uploads/2011/12/Body-BG-Light.jpg"); ba
 #nav .pipes { width: 1px; height: 80px; margin-top: 6px; }
 #nav img { margin: 34px 0 0 0; }
 #nav li ul { position: absolute; top: 275px; display: none; }
-#nav li { float: left; list-style: none; margin: 16px -1px 0 -1px; border-radius: 7px 7px 0px 0px; } 
-.main_nav_links { display: block; padding: 4px 25px 54px 25px; border-radius: 7px 7px 0px 0px; }
+#nav li { float: left; list-style: none; margin: 12px -1px 0 -1px; border-radius: 7px 7px 0px 0px; } 
+.main_nav_links { display: block; padding: 4px 25px 58px 25px; border-radius: 7px 7px 0px 0px; }
 </style>
 
     <div id="main_body">

@@ -1,4 +1,4 @@
-    * { font-family: serif; margin: 0; padding: 0; color: #222; -moz-user-select: text;
+    * { font-family: Helvetica, sans-serif; margin: 0; padding: 0; color: #222; -moz-user-select: text;
                 -khtml-user-select: text;
                 user-select: text; }
     body { background-color: #eee3cb; background-image: url("http://crosspointchurches.org/dev-CP/wp-content/uploads/2011/12/Body-BG-short.png"); background-repeat: repeat-x; }
@@ -21,10 +21,10 @@
     #contact_methods {  margin: 66px 0 0 0px; }
     #social_media img { margin: 0px 5px; }
     #logo { margin-left: 233px; }
-    #email_box, #phone_box { width: 0px; overflow: hidden; margin: 13px 0 0 -75px; float: left; }
+    #email_box, #phone_box { width: 0px; overflow: hidden; margin: 19px 0 0 -65px; float: left; }
     #email_box:hover, #phone_box:hover { opacity: .6; }
     
-    h2 { font-size: 18px; font-weight: bolder; margin-left: 5px; }
+    h2 { font-size: 18px; font-weight: bolder; }
 
     #nav { background-image: url("http://crosspointchurches.org/dev-CP/wp-content/uploads/2011/12/nav-bg.jpg"); height: 50px; width: 1200px; margin-left: -210px; }
     #nav ul { margin-left: 210px; }
@@ -33,7 +33,7 @@
     #nav .main_nav_links:hover, #nav li img:hover, #nav li:hover { background: #ef3b24; opacity: 1; }
 
     #nav ul li ul li a { color: white; padding: 15px; font-family: helvetica, sans-serif; font-weight: bold; text-transform: uppercase; font-size: 13px; }
-    #nav ul li ul li { margin: 0px 30px; }
+    #nav ul li ul li { margin: 0px 10px; }
     #nav .pipes { width: 1px; height: 30px; margin-top: 6px; }
     
     #nav ul il { position: relative; }
@@ -45,7 +45,7 @@
     #nav li:hover ul { display: block; }
 
     #search_wrapper { 
-	background: white; 
+	background: #eee3cb; 
 	padding: 0 6px; 
 	margin: 5px 0 0 652px; 
 	height: 20px; 
@@ -53,25 +53,39 @@
     #searchform input { float: left; height: 20px; background: black; border: 0px; color: white; z-index: 5; }
     #search_icon { float: left; background: black; height: 20px; }
 
-    #two_column_wrapper { float: left; width: 600px; }
+    #two_column_wrapper { float: left; width: 600px; margin:20px 0 0; }
     #welcome { margin: 10px 0 0 0; }
     #all_caps { font-size: 30px; color: #ef3b24; text-align: right;  font-style: italic; }
     #all_caps, #splash_paragraph { width: 280px; float: left; font-family: sans-serif; font-weight: lighter; margin: 10px; }
     p { margin-bottom: 10px; }
     
+	/* Text Styles */
+	#two_column_wrapper p { font-size:12px; line-height:18px; }
+	#two_column_wrapper h1 { font-size:24px; line-height:24px; }
+	#two_column_wrapper h2 { font-size:18px; line-height:16px; text-transform:uppercase; }
+	#two_column_wrapper h3 { font-size:12px; line-height:12px; font-weight:bold; }
+	#two_column_wrapper h4 { font-size:12px; line-height:12px; font-weight:lighter; }
+	
+	#two_column_wrapper blockquote, #two_column_wrapper blockquote p { font-size: 22px; line-height:26px; font-style:italic; font-weight: lighter; }
+	
+	#two_column_wrapper .entry-title { font-size:24px; line-height:24px; letter-spacing:0.1em; text-transform:none; }
+
+	#phone_box h2, #email_box h2 { font-size:12px; font-weight:lighter; letter-spacing:0.2em; }
+	
     #columns { float: left; }
     #third_column { float: left; }
     #black_box {   
 		  background: black; 
-                  margin: 10px 0 0 10px; 
+                  margin: 5px 0 0 10px; 
+				  padding: 1px 0 0 0;
                   width: 200px; 
                   }
     #black_box div { margin-top: 10px; }              
 
     #black_box h3, #black_box h4, #black_box h5 { color: white; font-family: sans-serif; }                  
-    #black_box h3 { font-size: 30px; font-weight: bold; float: left; padding-left: 10px; color: #eee3cb; }
-    #black_box h4 { font-size: 18px; padding: 10px 10px 5px 10px; margin-left: 40px; }
-    #black_box h5 { margin-left: 40px; padding: 1px 10px; font-weight: lighter; }
+    #black_box h3 { font-size: 29px; font-weight: bold; float: left; padding-left: 10px; color: #eee3cb; }
+    #black_box h4 { font-size: 14px; padding: 10px 10px 5px 10px; margin-left: 40px; font-weight: 300; }
+    #black_box h5 { margin-left: 40px; padding: 1px 10px; font-size:12px; font-weight: 300; color: #999; }
 
     #scroll { margin-left: 10px;}
     #footer { text-align: center; margin-bottom: 25px; }

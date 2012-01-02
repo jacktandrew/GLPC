@@ -19,7 +19,7 @@ var $j = jQuery.noConflict();
 
 $j(document).ready(function() {
     
-function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
+function slide_it(el, sz) { $j(el).animate({ "width": sz }, 300); }
 
   $j("#email").click(function() {
     if ($j("#email_box").width() === 0 && $j("#phone_box").width() === 0)
@@ -29,7 +29,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
     else if ($j("#phone_box").width() > 0) 
     {
       slide_it("#phone_box", "0px");
-      $j("#email_box").delay(800).animate({ "width": "260px" }, "slow");
+      $j("#email_box").delay(800).animate({ "width": "260px" }, 300);
     } 
     else 
     {
@@ -45,7 +45,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
     else if ($j("#email_box").width() > 0 ) 
       {
         slide_it("#email_box", "0px");
-        $j("#phone_box").delay(800).animate({ "width": "200px" }, "slow");
+        $j("#phone_box").delay(800).animate({ "width": "200px" }, 300);
       } 
     else 
       {
@@ -81,12 +81,12 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
 
 	if (theTitle === "Peripateo Gathering") 
         {
-          theTitle = "<span style='color: blue'>Peripateo Gathering</span>"
+          theTitle = "<span style='color: #e5e5e5'>Peripateo Gathering</span>"
         }
 
 	if (theTitle.slice(0,2) === "PG") 
 	{
-	  theTitle = "<span style='color: red'>" + theTitle + "</span>"
+	  theTitle = "<span style='color: #e5e5e5'>" + theTitle + "</span>"
 	}
 
     //
@@ -96,7 +96,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
      html += "<div>" + "<h3>" + date.getDate() + "</h3><h4>" + theTitle  + "</h4><h5>" + el.content.$t + "</h5></div>";
     });
 
-    $j("#black_box").html(html + "<br/><br/><br/><br/>");
+    $j("#black_box").html(html + "<br/>");
   });
 
 });
@@ -142,7 +142,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
 
     <div id="nav">
       <ul>
-        <li onMouseOver="document.pic1.src='wp-content/uploads/2011/12/white-about.png' " onMouseOut="document.pic1.src='wp-content/uploads/2011/12/nav_link-about.png' "><a class="main_nav_links" href="./about"><img name="pic1" src="wp-content/uploads/2011/12/nav_link-about.png" /></a>
+        <li onmouseover="document.pic1.src='wp-content/uploads/2011/12/white-about.png' " onmouseout="document.pic1.src='wp-content/uploads/2011/12/nav_link-about.png' "><a class="main_nav_links" href="./about"><img name="pic1" src="wp-content/uploads/2011/12/nav_link-about.png" /></a>
           <ul>
             <li><a href="#">abou #1</a></li>
             <li><a href="#">abou #2</a></li>
@@ -154,7 +154,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
           <img class="pipes" src="wp-content/uploads/2011/12/red_pipe.png" />
         </li>
 
-        <li onMouseOver="document.pic2.src='wp-content/uploads/2011/12/white-locations.png' " onMouseOut="document.pic2.src='wp-content/uploads/2011/12/nav_link-locations.png' ">
+        <li onmouseover="document.pic2.src='wp-content/uploads/2011/12/white-locations.png' " onmouseout="document.pic2.src='wp-content/uploads/2011/12/nav_link-locations.png' ">
           <a class="main_nav_links" href="./locations"><img name="pic2" src="wp-content/uploads/2011/12/nav_link-locations.png" /></a>
           <ul>
             <li><a href="#">loca #1</a></li>
@@ -168,7 +168,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
           <img class="pipes" src="wp-content/uploads/2011/12/red_pipe.png" />
         </li>
 
-        <li onMouseOver="document.pic3.src='wp-content/uploads/2011/12/white-peripateo.png' " onMouseOut="document.pic3.src='wp-content/uploads/2011/12/nav_link-peripateo.png' ">
+        <li onmouseover="document.pic3.src='wp-content/uploads/2011/12/white-peripateo.png' " onmouseout="document.pic3.src='wp-content/uploads/2011/12/nav_link-peripateo.png' ">
           <a class="main_nav_links" href="./peripateo"><img name="pic3" src="wp-content/uploads/2011/12/nav_link-peripateo.png" /></a>
           <ul>
             <li><a href="#">reso #1</a></li>
@@ -182,7 +182,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
         </li>
 
 
-        <li onMouseOver="document.pic4.src='wp-content/uploads/2011/12/white-resources.png' " onMouseOut="document.pic4.src='wp-content/uploads/2011/12/nav_link-resources.png' ">
+        <li onmouseover="document.pic4.src='wp-content/uploads/2011/12/white-resources.png' " onmouseout="document.pic4.src='wp-content/uploads/2011/12/nav_link-resources.png' ">
           <a class="main_nav_links" href="./resources"><img name="pic4" src="wp-content/uploads/2011/12/nav_link-resources.png" /></a>
           <ul>
             <li><a href="#">peri #1</a></li>
@@ -197,7 +197,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, "slow"); }
       <div id="search_wrapper">
 	<form id="searchform" value="?" class="blog-search" method="get" action="<?php bloginfo('home') ?>">
 
-<input id="s" name="s" type="text" class="text" value="<?php the_search_query() ?>" size="17" tabindex="1" />
+<input id="s" name="s" type="text" class="text" value="<?php the_search_query() ?>" size="19" tabindex="1" />
 <input type="image" class="button" src="wp-content/uploads/2011/12/search-icon-light.png" value="<?php _e( ' &nbsp; ', 'sandbox' ) ?>" tabindex="2" />
 	</form>
       </div>

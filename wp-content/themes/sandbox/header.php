@@ -110,15 +110,15 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, 300); }
   <div id="wrapper">
     <div id="header">
       <div id="small_links" >
-        <a href="#">The City </a><span> | </span> 
-        <a href="#">Server </a><span> | </span> 
+        <a href="https://crosspointchurches.onthecity.org/kiosk/13284/signup">The City </a><span> | </span> 
+        <a href="#">Serve </a><span> | </span> 
         <a href="#">Give </a>
       </div>
 
       <div id="logo">
         <div id="social_media">
-          <a href="#"><img src="wp-content/uploads/2011/12/social-twitter.png" /></a>
-          <a href="#"><img src="wp-content/uploads/2011/12/social-facebook.png" /></a>
+          <a href="http://twitter.com/GreenlakePC"><img src="wp-content/uploads/2011/12/social-twitter.png" /></a>
+          <a href="http://www.facebook.com/CrossPointChurches"><img src="wp-content/uploads/2011/12/social-facebook.png" /></a>
         </div>
     
         <a id="logo_img" href="./"><img src="wp-content/uploads/2011/12/logo.png" /></a>

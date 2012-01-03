@@ -3,7 +3,7 @@
                 user-select: text; }
     body { background-color: #eee3cb; background-image: url("http://crosspointchurches.org/dev-CP/wp-content/uploads/2011/12/Body-BG-short.png"); background-repeat: repeat-x; }
 
-    #wrapper { width: 810px; margin-left: auto; margin-right: auto; height: 1000px;  }
+    #wrapper { width: 810px; margin-left: auto; margin-right: auto; min-height: 900px;  }
     a { text-decoration: none; color: #111; }
     #logo_img img:hover, .hoverable img:hover, .hoverable a:hover { opacity: 1; }
     a:hover, a img:hover { opacity: .6; color: #eee3cb; }
@@ -70,7 +70,8 @@
 	
 	#two_column_wrapper .entry-title { font-size:24px; line-height:24px; letter-spacing:0.1em; text-transform:none; }
 
-	#phone_box h2, #email_box h2 { font-size:12px; font-weight:lighter; letter-spacing:0.2em; }
+	#phone_box h2, #email_box h2 { font-size:12px; font-weight:bold; letter-spacing:0.2em; }
+	#contact_methods IMG {margin-left:10px; }
 	
     #columns { float: left; }
     #third_column { float: left; }
@@ -88,4 +89,4 @@
     #black_box h5 { margin-left: 40px; padding: 1px 10px; font-size:12px; font-weight: 300; color: #999; }
 
     #scroll { margin-left: 10px;}
-    #footer { text-align: center; margin-bottom: 25px; }
+    #footer { text-align: center; margin-bottom: 25px; clear:both; font-size:11px; letter-spacing:0.1em; }

@@ -143,11 +143,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, 300); }
     <div id="nav">
       <ul>
         <li onmouseover="document.pic1.src='wp-content/uploads/2011/12/white-about.png' " onmouseout="document.pic1.src='wp-content/uploads/2011/12/nav_link-about.png' "><a class="main_nav_links" href="./about"><img name="pic1" src="wp-content/uploads/2011/12/nav_link-about.png" /></a>
-          <ul>
-            <li><a href="#">abou #1</a></li>
-            <li><a href="#">abou #2</a></li>
-            <li><a href="#">abou #3</a></li>
-          </ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'about-sub' ) ); ?>
         </li>
 
         <li>
@@ -156,11 +152,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, 300); }
 
         <li onmouseover="document.pic2.src='wp-content/uploads/2011/12/white-locations.png' " onmouseout="document.pic2.src='wp-content/uploads/2011/12/nav_link-locations.png' ">
           <a class="main_nav_links" href="./locations"><img name="pic2" src="wp-content/uploads/2011/12/nav_link-locations.png" /></a>
-          <ul>
-            <li><a href="#">loca #1</a></li>
-            <li><a href="#">loca #2</a></li>
-            <li><a href="#">loca #3</a></li>
-          </ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'locations-sub' ) ); ?>
         </li>
 
 
@@ -170,11 +162,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, 300); }
 
         <li onmouseover="document.pic3.src='wp-content/uploads/2011/12/white-peripateo.png' " onmouseout="document.pic3.src='wp-content/uploads/2011/12/nav_link-peripateo.png' ">
           <a class="main_nav_links" href="./peripateo"><img name="pic3" src="wp-content/uploads/2011/12/nav_link-peripateo.png" /></a>
-          <ul>
-            <li><a href="#">reso #1</a></li>
-            <li><a href="#">reso #2</a></li>
-            <li><a href="#">reso #3</a></li>
-          </ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'peripateo-sub' ) ); ?>
         </li>
 
         <li>
@@ -184,11 +172,7 @@ function slide_it(el, sz) { $j(el).animate({ "width": sz }, 300); }
 
         <li onmouseover="document.pic4.src='wp-content/uploads/2011/12/white-resources.png' " onmouseout="document.pic4.src='wp-content/uploads/2011/12/nav_link-resources.png' ">
           <a class="main_nav_links" href="./resources"><img name="pic4" src="wp-content/uploads/2011/12/nav_link-resources.png" /></a>
-          <ul>
-            <li><a href="#">peri #1</a></li>
-            <li><a href="#">peri #2</a></li>
-            <li><a href="#">peri #3</a></li>
-          </ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'resources-sub' ) ); ?>
         </li>
       </ul>
     </div>

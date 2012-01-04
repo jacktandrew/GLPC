@@ -356,6 +356,15 @@ function sandbox_gallery($attr) {
 	return $output;
 }
 
+// Widget: CMS Menus
+function register_my_menus() {
+  register_nav_menus(
+    array( 'about-sub' => __( 'About' ), 'locations-sub' => __( 'Locations' ),'peripateo-sub' => __( 'Peripateo' ),'resources-sub' => __( 'Resources' ),)
+  );
+}
+
+add_action( 'init', 'register_my_menus' );
+
 // Widget: Search; to match the Sandbox style and replace Widget plugin default
 function widget_sandbox_search($args) {
 	extract($args);

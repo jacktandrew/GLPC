@@ -26,17 +26,16 @@
     
     h2 { font-size: 18px; font-weight: bolder; }
 
-    #nav { background-image: url("http://crosspointchurches.org/dev-CP/wp-content/uploads/2011/12/nav-bg.jpg"); height: 50px; width: 1200px; margin-left: -210px; }
-    #nav ul { margin-left: 210px; }
+    #nav { background-image: url("http://crosspointchurches.org/dev-CP/wp-content/uploads/2011/12/nav-bg.jpg"); height: 50px; width: 1200px; }
+    #nav ul { }
     #nav li { float: left; list-style: none; margin: 6px -1px 0 -1px; border-radius: 7px 7px 0px 0px; } 
     .main_nav_links { display: block; padding: 13px 25px 19px 25px; border-radius: 7px 7px 0px 0px; }
     #nav .main_nav_links:hover, #nav li img:hover, #nav li:hover { background: #ef3b24; opacity: 1; }
 
-    #nav ul li ul li a { color: white; padding: 15px; font-family: helvetica, sans-serif; font-weight: bold; text-transform: uppercase; font-size: 13px; }
-    #nav ul li ul li { margin: 0px 10px; }
+    #nav ul li ul li a { color: white; padding: 15px; font-family: helvetica, sans-serif; font-weight: normal; text-transform: uppercase; font-size: 12px; }
+    #nav ul li ul li { color:black; margin:2px 0; font-family: helvetica, sans-serif; font-weight: nromal; text-transform: uppercase; font-size: 12px; }
     #nav .pipes { width: 1px; height: 30px; margin-top: 6px; }
     
-    #nav ul il { position: relative; }
     #nav li ul { position: absolute; top: 206px; display: none; }
     #nav li:first-child ul { margin-left: 0px;}
     #nav li:nth-child(3) ul { margin-left: -125px;} 
@@ -54,7 +53,7 @@
     #search_icon { float: left; background: black; height: 20px; }
 
     #two_column_wrapper { float: left; width: 600px; margin:20px 0 0; }
-    #welcome { margin: 10px 0 0 0; }
+    #welcome { margin: -15px 0 0 0; }
     #all_caps { font-size: 30px; color: #ef3b24; text-align: right;  font-style: italic; }
     #all_caps, #splash_paragraph { width: 280px; float: left; font-family: sans-serif; font-weight: lighter; margin: 10px; }
     p { margin-bottom: 10px; }
